@@ -183,7 +183,7 @@ def main():
     optimizer     = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 
-    epochs = 2
+    epochs = 15 
     train_loss  = []
     test_loss   = []
 
