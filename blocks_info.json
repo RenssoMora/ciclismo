@@ -1,0 +1,1 @@
+{"segment_unit": 500, "th": 17300, "columns": ["velocity_smooth", "heartrate", "cadence", "watts_calc", "grade_smooth"], "n_rows": 45}
