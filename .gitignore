@@ -32,3 +32,4 @@ _ReSharper*/
 packages/
 refined.json
 /FB_raw.csv
+/transformer_ts.pth
