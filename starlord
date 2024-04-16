@@ -9,4 +9,4 @@ module load cuda/9.0
 conda env update -f environment.yml
 source activate starlord
 
-srun python ciclismo.py
+srun python transformer.py

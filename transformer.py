@@ -225,10 +225,13 @@ def main():
     lr          = 0.00005 # learning rate
     optimizer   = torch.optim.AdamW(model.parameters(), lr=lr)
     scheduler   = torch.optim.lr_scheduler.StepLR(optimizer, 1.0, gamma=0.95)
-    epochs      = 2 # Number of epochs
+    epochs      = 150 # Number of epochs
 
     train_code(epochs, train_data, val_data, model, optimizer, criterion, scheduler)
 
+    torch.save(model.state_dict(), "transformer_ts.pth")
+
+    #test_result, truth = forecast_seq(model, val_data)
 
 ################################################################################
 ################################################################################
